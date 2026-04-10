@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>L'Artigianale | Pastaia Artesanal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error-container": "#ffdad6",
+                    "on-primary-fixed-variant": "#85221b",
+                    "on-tertiary-fixed-variant": "#52452b",
+                    "error": "#ba1a1a",
+                    "background": "#fdf9f4",
+                    "surface-dim": "#ddd9d5",
+                    "outline-variant": "#dec0bc",
+                    "surface-tint": "#a63930",
+                    "primary-fixed": "#ffdad5",
+                    "surface-container-high": "#ebe8e3",
+                    "tertiary": "#3f331a",
+                    "surface": "#fdf9f4",
+                    "tertiary-fixed": "#f5e0bd",
+                    "on-secondary-fixed": "#141f03",
+                    "surface-bright": "#fdf9f4",
+                    "on-secondary-fixed-variant": "#3e4b28",
+                    "tertiary-fixed-dim": "#d8c4a2",
+                    "surface-container-low": "#f7f3ee",
+                    "secondary-container": "#d9e9b9",
+                    "primary": "#6b0d0b",
+                    "on-primary-fixed": "#410001",
+                    "on-error": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "on-background": "#1c1c19",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed": "#d9e9b9",
+                    "outline": "#8b716e",
+                    "on-error-container": "#93000a",
+                    "inverse-surface": "#31302d",
+                    "secondary": "#55633e",
+                    "tertiary-container": "#57492f",
+                    "on-tertiary": "#ffffff",
+                    "primary-container": "#8b261f",
+                    "on-secondary-container": "#5b6943",
+                    "on-primary": "#ffffff",
+                    "on-surface": "#1c1c19",
+                    "primary-fixed-dim": "#ffb4aa",
+                    "on-tertiary-fixed": "#241a05",
+                    "surface-container": "#f1ede8",
+                    "on-primary-container": "#ffa397",
+                    "on-surface-variant": "#57423f",
+                    "inverse-primary": "#ffb4aa",
+                    "surface-variant": "#e6e2dd",
+                    "secondary-fixed-dim": "#bdcc9f",
+                    "on-tertiary-container": "#ccb997",
+                    "surface-container-highest": "#e6e2dd",
+                    "inverse-on-surface": "#f4f0eb"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .font-notoSerif { font-family: 'Noto Serif', serif; }
+        .font-manrope { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .grainy-overlay {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            opacity: 0.03;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+<div class="grainy-overlay fixed inset-0 z-[100]"></div>
+<!-- Navegación -->
+<nav class="fixed top-0 w-full z-50 bg-[#fdf9f4]/80 dark:bg-stone-950/80 backdrop-blur-md shadow-sm dark:shadow-none transition-all duration-300">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<a class="font-notoSerif italic text-2xl font-bold text-[#6b0d0b] dark:text-[#f7f3ee]" href="#">L'Artigianale</a>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-manrope uppercase tracking-wider text-xs font-semibold text-[#6b0d0b] dark:text-[#f7f3ee] border-b-2 border-[#8B261F] pb-1" href="#">Inicio</a>
+<a class="font-manrope uppercase tracking-wider text-xs font-semibold text-stone-600 dark:text-stone-400 hover:text-[#8B261F] transition-colors" href="#">Menú</a>
+<a class="font-manrope uppercase tracking-wider text-xs font-semibold text-stone-600 dark:text-stone-400 hover:text-[#8B261F] transition-colors" href="#">Reservas</a>
+<a class="font-manrope uppercase tracking-wider text-xs font-semibold text-stone-600 dark:text-stone-400 hover:text-[#8B261F] transition-colors" href="#">Nuestra Historia</a>
+</div>
+<button class="bg-gradient-to-b from-primary to-primary-container text-on-primary font-manrope uppercase tracking-widest text-[10px] font-bold py-3 px-6 rounded-sm shadow-md hover:opacity-90 active:scale-[0.98] transition-all">
+                Reservar Mesa
+            </button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Sección Hero -->
+<section class="relative min-h-[921px] flex items-center overflow-hidden px-8">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
+<div class="lg:col-span-5 z-10">
+<span class="font-manrope text-secondary font-bold uppercase tracking-[0.3em] text-xs mb-4 block">Desde 1954</span>
+<h1 class="font-notoSerif text-6xl md:text-8xl leading-[1.1] text-primary tracking-tighter mb-8 italic">
+                        El Alma <br/>de la <span class="text-on-background">Pasta.</span>
+</h1>
+<p class="font-manrope text-lg text-on-surface-variant max-w-md leading-relaxed mb-10">
+                        Experimente la alquimia de harina, huevos y tiempo. Amasada a mano diariamente en nuestra cocina abierta, trayendo el pulso auténtico de Italia a su mesa.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-sm font-manrope font-bold uppercase tracking-widest text-xs shadow-xl active:scale-[0.99] transition-transform">
+                            Reserva tu mesa
+                        </button>
+<button class="border border-outline-variant/20 px-8 py-4 rounded-sm font-manrope font-bold uppercase tracking-widest text-xs text-primary hover:bg-surface-container-low transition-colors">
+                            Ver Menú
+                        </button>
+</div>
+</div>
+<div class="lg:col-span-7 relative h-[600px] lg:h-[800px]">
+<div class="absolute inset-0 bg-surface-container-low -right-1/2 -top-20 -bottom-20 z-0"></div>
+<img alt="Primer plano de nidos de tagliatelle hechos a mano sobre una mesa de madera con harina, iluminación cálida y cinematográfica" class="absolute inset-0 w-full h-full object-cover z-10 shadow-2xl rounded-sm translate-x-4 lg:translate-x-12 -rotate-1 lg:-rotate-2 hover:rotate-0 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbK3ueV2OW6Gp4RefX490V3DxOKDlrXVNh1_7IMI6PdGMscoq_0DI-vo__eeWfE3o_rqRqjUDsDV7mykjTShpNWf4kluSlJh4aPrqWldQ5zIbZCLeBzMx2E7dfzPQRnoQu6FDJb2X7stoUF68ym2UeC-5ejHoSPFIJOycIV8Ee2ym9ORxj5GGmZ73Zy81ud0k21fCAcAkeDO9nnWAHuHDuwQbU4PKjaWMveqniDN2_FZxgD9dtElgIOP96EBotAOwZYkgzTTpTcyY"/>
+<div class="absolute -bottom-8 -left-8 z-20 bg-white p-8 shadow-xl max-w-xs hidden md:block">
+<p class="font-notoSerif italic text-xl text-primary-container">"Cada hebra cuenta una historia de paciencia y herencia."</p>
+<p class="font-manrope uppercase text-[10px] tracking-widest mt-4 font-bold text-secondary">— Chef Marco Rossi</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Sección Filosofía -->
+<section class="py-32 bg-surface-container-low relative">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div class="order-2 md:order-1">
+<div class="grid grid-cols-2 gap-4">
+<img alt="Manos artesanas amasando pasta sobre una superficie de mármol con iluminación lateral dramática" class="w-full aspect-square object-cover rounded-sm shadow-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYw8JcYCLbMIAZtfr5Ls9cQnCkeiHO1mNLGamH8c7nPwNgOGMRt6dTP_mry4wWA4YOiTGvtcRyX3DjF_8SaTMxfy5XhDvqCaoNHpXzniIHQIbGHdk70WNPmLE4UXT_6g7sTqoRVD1HNBcFg2PABbXvKCC45WtdlD5IiZgQGypNGG_2w5gCWaicp-696oFN7ZFqhYA2Hh4Bt3tjXfAiK5CwdD1aKu9yM3KFI11P7_IMiqGePdw9bUMdgoau5vf7w9fYCuyc_KZwQGs"/>
+<img alt="Selección de ingredientes italianos orgánicos incluyendo tomates, albahaca y aceite de oliva virgen extra" class="w-full aspect-[3/4] object-cover rounded-sm shadow-md mt-12" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIyBUHcPu0KX7HDLn6IqyYObSTY-r3PH77NOpWgJ0UTLz7XR5M789wD9kLPCP1Cq-g9ST8xIx7JjUOcfvs6KpxH-4i2NBQQgL3CfUibj68ZO1aN9P2d50IJjDxzEkRBI5gBqvnulN2By9Zblts1gl4PYBY3IeZ89tX_wfeKLWg_8gbfCnIn-zduxCUlS7PN9_bJRuwTlTpAHCo-qaBvUBCFLWL0JKHn7MO00WUtVsjHzsw2-pmmSuF-zuJXvfXxnwGgSJAlYenitI"/>
+</div>
+</div>
+<div class="order-1 md:order-2">
+<h2 class="font-manrope text-secondary font-bold uppercase tracking-[0.3em] text-xs mb-6">Nuestra Filosofía</h2>
+<h3 class="font-notoSerif text-4xl md:text-5xl text-on-background leading-tight mb-8">
+                        La sencillez es la <br/>máxima <span class="text-primary-container italic">sofisticación.</span>
+</h3>
+<p class="font-manrope text-on-surface-variant leading-[1.8] mb-8">
+                        En L'Artigianale, creemos que los mejores sabores se encuentran en los orígenes más simples. Obtenemos nuestro grano de molinos centenarios y nuestros huevos de granjas locales de herencia. Aquí no hay atajos, solo la danza rítmica del rodillo y el calor honesto del fogón de leña.
+                    </p>
+<div class="grid grid-cols-2 gap-8 border-t border-outline-variant/10 pt-8">
+<div>
+<span class="block font-notoSerif text-2xl text-primary font-bold">100%</span>
+<span class="font-manrope text-[10px] uppercase tracking-widest font-semibold opacity-60">Grano Molido en Piedra</span>
+</div>
+<div>
+<span class="block font-notoSerif text-2xl text-primary font-bold">0</span>
+<span class="font-manrope text-[10px] uppercase tracking-widest font-semibold opacity-60">Aditivos Artificiales</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Plato del Mes -->
+<section class="py-32 px-8 max-w-7xl mx-auto overflow-hidden">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16">
+<div>
+<span class="font-manrope text-secondary font-bold uppercase tracking-[0.3em] text-xs mb-4 block">Selección Limitada</span>
+<h2 class="font-notoSerif text-5xl text-on-background tracking-tighter">Plato del Mes</h2>
+</div>
+<div class="hidden md:block">
+<a class="font-manrope text-sm font-bold text-primary flex items-center gap-2 group" href="#">
+                        Explorar Menú Completo 
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="bg-surface-container-lowest grid grid-cols-1 lg:grid-cols-2 shadow-2xl overflow-hidden rounded-sm group">
+<div class="relative overflow-hidden h-96 lg:h-full">
+<img alt="Pappardelle artesanal con ragú de jabalí y hierbas frescas en plato de cerámica rústica" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.5s]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCs4CUzbg6jPNJdNuf_8cTu37dogX5m7-30bQ8PQh2LWeoT_f9zNREWPYcat6HciCbGpmWg-rw1GEhpPzjuRF4qzcVzdTLEbDjLDbjdeY79BULJ6HUoC_-G75PPbimuwr8SozkvHXWKY47DlfaNW4v5lV4o1DKo7JArZs43LN0QsmE9WGLokBOb_aCtaVMMj816Xvnbgo8UKE8rypU2-EHFjGOwWaWZlGuJfbt-Kd8I_9YcKvl4rxtg_czel7DCzaF7x5ppEIn4M-A"/>
+<div class="absolute top-6 left-6 bg-secondary text-on-secondary px-4 py-1 text-[10px] font-bold uppercase tracking-widest rounded-full">
+                        Temporada de Trufa Fresca
+                    </div>
+</div>
+<div class="p-12 lg:p-20 flex flex-col justify-center">
+<h4 class="font-notoSerif text-3xl mb-4 italic">Pappardelle al Cinghiale</h4>
+<p class="font-manrope text-on-surface-variant leading-relaxed mb-8">
+                        Cintas anchas de pasta al huevo cortada a mano con un ragú de jabalí toscano cocinado a fuego lento durante 12 horas, terminado con Pecorino Toscano y un toque de hierbas de montaña.
+                    </p>
+<div class="flex items-center gap-4 mb-10">
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-[10px] font-bold uppercase tracking-widest">Maridaje: Chianti Classico</span>
+<span class="font-manrope text-primary font-bold">$28</span>
+</div>
+<button class="w-full sm:w-max bg-primary-container text-on-primary px-10 py-4 rounded-sm font-manrope font-bold uppercase tracking-widest text-[10px] shadow-lg active:scale-95 transition-all">
+                        Reservar esta Experiencia
+                    </button>
+</div>
+</div>
+</section>
+<!-- Llamada a la acción -->
+<section class="mb-32 px-8">
+<div class="max-w-7xl mx-auto bg-primary py-24 px-12 text-center relative overflow-hidden rounded-sm">
+<div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/linen.png')] opacity-10"></div>
+<div class="relative z-10">
+<h2 class="font-notoSerif text-on-primary text-4xl md:text-5xl mb-8 tracking-tight">Reúnete en nuestra mesa.</h2>
+<p class="font-manrope text-on-primary/80 max-w-xl mx-auto mb-10 leading-relaxed">
+                        Ya sea para una velada íntima o una gran celebración, permítanos crear un recuerdo que perdure mucho después del último bocado.
+                    </p>
+<div class="flex justify-center gap-8 text-on-primary/60">
+<div class="flex flex-col">
+<span class="font-notoSerif text-xl text-on-primary">Cena</span>
+<span class="font-manrope text-[10px] uppercase tracking-widest">Mar—Dom, 17:00—22:00</span>
+</div>
+<div class="w-px h-10 bg-on-primary/20"></div>
+<div class="flex flex-col">
+<span class="font-notoSerif text-xl text-on-primary">Brunch</span>
+<span class="font-manrope text-[10px] uppercase tracking-widest">Sáb—Dom, 11:00—15:00</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Pie de página -->
+<footer class="bg-[#f7f3ee] dark:bg-stone-900 w-full py-12 mt-20 border-t border-stone-200/20">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 max-w-7xl mx-auto">
+<div>
+<a class="font-notoSerif text-xl text-[#6b0d0b] dark:text-[#f7f3ee] block mb-6" href="#">L'Artigianale</a>
+<p class="font-manrope text-sm text-stone-500 dark:text-stone-400 leading-relaxed">
+                    © 2024 L'Artigianale Pastaia. Amasado a mano con pasión. <br/>
+                    Via della Scala 14, Florencia, Italia.
+                </p>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-manrope uppercase text-[10px] font-bold tracking-[0.2em] text-primary mb-2">Conectar</span>
+<a class="font-manrope text-sm text-stone-500 dark:text-stone-400 hover:text-[#6b0d0b] hover:underline decoration-[#8B261F] underline-offset-4 transition-all" href="#">Instagram</a>
+<a class="font-manrope text-sm text-stone-500 dark:text-stone-400 hover:text-[#6b0d0b] hover:underline decoration-[#8B261F] underline-offset-4 transition-all" href="#">Facebook</a>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-manrope uppercase text-[10px] font-bold tracking-[0.2em] text-primary mb-2">Servicio</span>
+<a class="font-manrope text-sm text-stone-500 dark:text-stone-400 hover:text-[#6b0d0b] hover:underline decoration-[#8B261F] underline-offset-4 transition-all" href="#">Contacto</a>
+<a class="font-manrope text-sm text-stone-500 dark:text-stone-400 hover:text-[#6b0d0b] hover:underline decoration-[#8B261F] underline-offset-4 transition-all" href="#">Horarios</a>
+<a class="font-manrope text-sm text-stone-500 dark:text-stone-400 hover:text-[#6b0d0b] hover:underline decoration-[#8B261F] underline-offset-4 transition-all" href="#">Eventos Privados</a>
+</div>
+</div>
+</footer>
+</body></html>

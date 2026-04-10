@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error-container": "#ffdad6",
+                    "on-primary-fixed-variant": "#85221b",
+                    "on-tertiary-fixed-variant": "#52452b",
+                    "error": "#ba1a1a",
+                    "background": "#fdf9f4",
+                    "surface-dim": "#ddd9d5",
+                    "outline-variant": "#dec0bc",
+                    "surface-tint": "#a63930",
+                    "primary-fixed": "#ffdad5",
+                    "surface-container-high": "#ebe8e3",
+                    "tertiary": "#3f331a",
+                    "surface": "#fdf9f4",
+                    "tertiary-fixed": "#f5e0bd",
+                    "on-secondary-fixed": "#141f03",
+                    "surface-bright": "#fdf9f4",
+                    "on-secondary-fixed-variant": "#3e4b28",
+                    "tertiary-fixed-dim": "#d8c4a2",
+                    "surface-container-low": "#f7f3ee",
+                    "secondary-container": "#d9e9b9",
+                    "primary": "#6b0d0b",
+                    "on-primary-fixed": "#410001",
+                    "on-error": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "on-background": "#1c1c19",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed": "#d9e9b9",
+                    "outline": "#8b716e",
+                    "on-error-container": "#93000a",
+                    "inverse-surface": "#31302d",
+                    "secondary": "#55633e",
+                    "tertiary-container": "#57492f",
+                    "on-tertiary": "#ffffff",
+                    "primary-container": "#8b261f",
+                    "on-secondary-container": "#5b6943",
+                    "on-primary": "#ffffff",
+                    "on-surface": "#1c1c19",
+                    "primary-fixed-dim": "#ffb4aa",
+                    "on-tertiary-fixed": "#241a05",
+                    "surface-container": "#f1ede8",
+                    "on-primary-container": "#ffa397",
+                    "on-surface-variant": "#57423f",
+                    "inverse-primary": "#ffb4aa",
+                    "surface-variant": "#e6e2dd",
+                    "secondary-fixed-dim": "#bdcc9f",
+                    "on-tertiary-container": "#ccb997",
+                    "surface-container-highest": "#e6e2dd",
+                    "inverse-on-surface": "#f4f0eb"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24
+    }
+.grain-overlay {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuDHTPjfY5NYD7ziqgszku9C6DwcYWFQAlcSPKixBB2m5C2yNZjVgf3BBSosICdX1eCBr-bWJ_j71yUy3Tl-h09hMhREikRGjnfb977mhY-CG5Pwc1ZJCG6-DaKyzaikwvje-bAEfel0qaUsDiWnw392VhiRUM3M9V0TQxPInLo8uGi574X5XI6i7t9_pLPWohjzhLCuDe_dMvwa4gj9U6ZL-zfdJ1HJwbzrXhGVhwtmAW6vJNSQQEmcbJocE1HR8YEeiKe2mH1Tcpw);
+    opacity: 0.03;
+    pointer-events: none
+    }</style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-fixed-dim selection:text-primary">
+<div class="fixed inset-0 grain-overlay z-[-1]"></div>
+<!-- Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 bg-[#fdf9f4]/80 dark:bg-stone-950/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<span class="font-headline italic text-2xl font-bold text-[#6b0d0b] dark:text-[#f7f3ee]">L'Artigianale</span>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label uppercase tracking-wider text-xs font-semibold text-stone-600 dark:text-stone-400 hover:text-[#8B261F] transition-colors" href="#">Inicio</a>
+<a class="font-label uppercase tracking-wider text-xs font-semibold text-stone-600 dark:text-stone-400 hover:text-[#8B261F] transition-colors" href="#">Menú</a>
+<a class="font-label uppercase tracking-wider text-xs font-semibold text-[#6b0d0b] dark:text-[#f7f3ee] border-b-2 border-[#8B261F] pb-1" href="#">Reservas</a>
+<a class="font-label uppercase tracking-wider text-xs font-semibold text-stone-600 dark:text-stone-400 hover:text-[#8B261F] transition-colors" href="#">Nuestra Historia</a>
+<button class="bg-gradient-to-v from-primary to-primary-container text-on-primary px-5 py-2.5 rounded-sm font-label uppercase tracking-wider text-[10px] font-bold hover:opacity-90 active:scale-[0.99] transition-all">Reservar Mesa</button>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-32 pb-20 max-w-7xl mx-auto px-6 lg:px-8">
+<!-- Hero Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end mb-20">
+<div class="lg:col-span-7">
+<h1 class="font-headline text-6xl md:text-8xl text-primary -tracking-[0.03em] leading-none mb-8">Asegura tu <br/><span class="italic">lugar</span>.</h1>
+<p class="font-body text-xl text-on-surface-variant max-w-xl leading-relaxed">
+                    Acompáñanos en una velada de pasta hecha a mano y vinos excepcionales. Cada asiento es una entrada en primera fila a nuestra cocina abierta.
+                </p>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/3] overflow-hidden rounded-sm shadow-sm bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="Interior of a luxury Italian restaurant with warm amber lighting, marble tables, and rustic brick walls at twilight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRFAEHzGqtdDFGtPbUODmwrsFEz3K2F3KUCvEzcUTx9-Xqk2HDVRt1oIKkeCiNoXtoyfzo9el5GZFYfHk4kDupqEiGjOtaNgyi_vkpF8j_noe6FKCTCC6ZVcF1Tz-yrvGWV-jcU8MSBXkCf7jS57uBTezRFQTp5EMR9_B39vhW8aJsWsCGc0y4HY2s5rGQuanfia6-hp7g0pxarvzhMp-rfITxL0xcfRbseDznqPaIaYuU18KgH6kIHIn_mRlr07e9wL2FjBZJZPM"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-secondary-container p-6 rounded-sm shadow-xl hidden md:block">
+<p class="font-headline italic text-on-secondary-container text-lg">"La mejor pasta fuera de Bolonia."</p>
+<p class="font-label text-xs uppercase tracking-widest mt-2 opacity-70">— Gastronomy Weekly</p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<!-- Reservation Form Section -->
+<div class="lg:col-span-8 bg-surface-container-lowest p-8 md:p-12 shadow-sm rounded-sm">
+<h2 class="font-headline text-3xl mb-12 flex items-center gap-4">
+                    Reserva de Mesa
+                    <span class="h-px flex-1 bg-outline-variant/20"></span>
+</h2>
+<form class="space-y-10">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Date Selection -->
+<div class="space-y-2">
+<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant font-bold">Seleccionar Fecha</label>
+<div class="relative">
+<input class="w-full bg-surface-container-low border-none rounded-sm px-4 py-4 font-body text-on-surface focus:ring-1 focus:ring-primary/20 focus:bg-surface transition-all outline-none" type="date"/>
+<span class="absolute right-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline pointer-events-none">calendar_today</span>
+</div>
+</div>
+<!-- Time Selection -->
+<div class="space-y-2">
+<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant font-bold">Hora Preferida</label>
+<div class="relative">
+<select class="w-full bg-surface-container-low border-none rounded-sm px-4 py-4 font-body text-on-surface focus:ring-1 focus:ring-primary/20 focus:bg-surface appearance-none outline-none">
+<option>18:30</option>
+<option>19:00</option>
+<option>19:30</option>
+<option>20:00</option>
+<option>20:30</option>
+<option>21:00</option>
+</select>
+<span class="absolute right-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline pointer-events-none">schedule</span>
+</div>
+</div>
+<!-- Guests -->
+<div class="space-y-2">
+<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant font-bold">Comensales</label>
+<div class="relative">
+<select class="w-full bg-surface-container-low border-none rounded-sm px-4 py-4 font-body text-on-surface focus:ring-1 focus:ring-primary/20 focus:bg-surface appearance-none outline-none">
+<option>2 Personas</option>
+<option>3 Personas</option>
+<option>4 Personas</option>
+<option>5 Personas</option>
+<option>6+ Personas</option>
+</select>
+<span class="absolute right-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline pointer-events-none">group</span>
+</div>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant font-bold">Peticiones Especiales</label>
+<textarea class="w-full bg-surface-container-low border-none rounded-sm px-4 py-4 font-body text-on-surface focus:ring-1 focus:ring-primary/20 focus:bg-surface transition-all outline-none resize-none" placeholder="Alergias, celebraciones de cumpleaños o preferencias de asiento..." rows="4"></textarea>
+</div>
+<div class="flex flex-col md:flex-row items-center justify-between gap-6 pt-6">
+<div class="flex items-center gap-3">
+<input class="w-5 h-5 rounded-sm border-outline-variant text-primary focus:ring-primary" id="newsletter" type="checkbox"/>
+<label class="font-body text-sm text-on-surface-variant" for="newsletter">Deseo suscribirme al boletín mensual 'Artisan'.</label>
+</div>
+<button class="w-full md:w-auto bg-gradient-to-b from-primary to-primary-container text-on-primary px-12 py-5 rounded-sm font-label uppercase tracking-widest text-sm font-extrabold shadow-lg hover:shadow-primary/20 active:scale-[0.98] transition-all" type="submit">
+                            Confirmar Reserva
+                        </button>
+</div>
+</form>
+</div>
+<!-- Sidebar Info -->
+<div class="lg:col-span-4 space-y-12">
+<!-- Private Dining -->
+<div class="space-y-6">
+<h3 class="font-headline text-2xl text-primary">Cenas Privadas</h3>
+<div class="aspect-video overflow-hidden rounded-sm bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Intimate private dining room with a single long oak table, candles, and floor-to-ceiling wine cellar wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb0iN0W4bkalnR43hdPGmsmxPiP4FUEej34BQVT2iw9aiScnADuTGOSPV_HD9M5fPBqpjhKC1bGmO2x9DB1szh72XN-lP6ayskdp3YPs-tewDNjx1mGqXvHPXFo1XkJhrnReHlIhWuZDvEjbMz1r7ScXX1Pf64JwQuACpWZOsklUZSwCAL0qTHREKH6jSjhKInURpiBg8kGIIGB7J7hF1QBhHjWsWGNlednadGEXgGvXdNhaBY8C-Sc5i93QjzMEQO84AzlRP-g8s"/>
+</div>
+<div class="space-y-4">
+<div class="bg-surface-container-low p-6 rounded-sm border-l-4 border-primary">
+<p class="font-label text-xs uppercase tracking-widest font-bold mb-2">La Sala Cantina</p>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                                Nuestra bodega subterránea acoge hasta 14 invitados para un viaje gastronómico inmersivo dirigido por el chef.
+                            </p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-sm border-l-4 border-secondary">
+<p class="font-label text-xs uppercase tracking-widest font-bold mb-2">La Terraza</p>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                                Cenas al aire libre con vistas al jardín de hierbas. Perfecto para recepciones y veladas de verano.
+                            </p>
+</div>
+</div>
+<a class="inline-flex items-center gap-2 text-primary font-label text-xs uppercase tracking-widest font-bold border-b-2 border-primary pb-1 group" href="#">
+                        Consultar sobre eventos
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Reservation Policy -->
+<div class="bg-secondary-container/30 p-8 rounded-sm">
+<h4 class="font-label text-xs uppercase tracking-widest font-extrabold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">info</span>
+                        Nuestra Política
+                    </h4>
+<ul class="space-y-4 font-body text-sm text-on-secondary-container leading-relaxed">
+<li class="flex gap-3">
+<span class="text-primary font-bold">1.</span>
+                            Mantenemos las mesas durante 15 minutos después de la hora de reserva.
+                        </li>
+<li class="flex gap-3">
+<span class="text-primary font-bold">2.</span>
+                            Los grupos grandes (8+) requieren una tarjeta de crédito como garantía.
+                        </li>
+<li class="flex gap-3">
+<span class="text-primary font-bold">3.</span>
+                            Las cancelaciones deben realizarse con al menos 24 horas de antelación.
+                        </li>
+</ul>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-[#f7f3ee] dark:bg-stone-900 w-full py-12 mt-20">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 max-w-7xl mx-auto border-t border-stone-200/20 pt-12">
+<div class="space-y-4">
+<span class="font-notoSerif text-xl text-[#6b0d0b] dark:text-[#f7f3ee]">L'Artigianale</span>
+<p class="font-manrope text-sm leading-relaxed text-stone-500 dark:text-stone-400">
+                    Auténtica pasta italiana hecha a mano cada mañana. Creando recuerdos, plato a plato.
+                </p>
+</div>
+<div class="flex flex-col gap-3">
+<h5 class="font-manrope text-xs uppercase tracking-widest font-bold text-[#8B261F] dark:text-[#f7f3ee] mb-2">Contacto</h5>
+<a class="font-manrope text-sm text-stone-500 dark:text-stone-400 hover:text-[#6b0d0b] hover:underline decoration-[#8B261F] underline-offset-4 transition-all duration-200" href="#">Instagram</a>
+<a class="font-manrope text-sm text-stone-500 dark:text-stone-400 hover:text-[#6b0d0b] hover:underline decoration-[#8B261F] underline-offset-4 transition-all duration-200" href="#">Facebook</a>
+<a class="font-manrope text-sm text-stone-500 dark:text-stone-400 hover:text-[#6b0d0b] hover:underline decoration-[#8B261F] underline-offset-4 transition-all duration-200" href="#">Contacto</a>
+</div>
+<div class="space-y-4">
+<h5 class="font-manrope text-xs uppercase tracking-widest font-bold text-[#8B261F] dark:text-[#f7f3ee] mb-2">Dónde estamos</h5>
+<p class="font-manrope text-sm text-stone-500 dark:text-stone-400">122 Via della Pasta, <br/>Florencia, Italia</p>
+<p class="font-manrope text-sm text-stone-500 dark:text-stone-400">Lun-Dom: 18:00 - 23:00</p>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-12 mt-12 pt-8 border-t border-stone-200/10">
+<p class="font-manrope text-xs text-stone-400 text-center italic">© 2024 L'Artigianale Pastaia. Hecho a mano con pasión.</p>
+</div>
+</footer>
+</body></html>
