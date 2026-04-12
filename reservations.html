@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Grano &amp; Terra | Reservations</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode:"class",
+    theme:{extend:{
+      colors:{"error":"#ba1a1a","surface-bright":"#fcf9f0","outline":"#88726c","surface-container":"#f1eee5","surface-tint":"#98462b","error-container":"#ffdad6","on-secondary-fixed":"#171e00","surface":"#fcf9f0","secondary":"#586330","on-secondary":"#ffffff","primary-fixed":"#ffdbd0","on-primary-container":"#ffded5","primary":"#83371d","surface-dim":"#dddad1","on-surface-variant":"#55433d","outline-variant":"#dbc1b9","on-tertiary-fixed-variant":"#474747","on-error":"#ffffff","inverse-on-surface":"#f4f1e8","surface-variant":"#e5e2da","secondary-fixed-dim":"#bfcd8f","on-secondary-fixed-variant":"#404b1b","tertiary-container":"#676666","on-tertiary":"#ffffff","tertiary-fixed-dim":"#c8c6c5","on-primary":"#ffffff","on-surface":"#1c1c17","tertiary":"#4f4e4e","inverse-primary":"#ffb59e","on-tertiary-container":"#e7e5e4","primary-container":"#a24e32","background":"#fcf9f0","on-error-container":"#93000a","primary-fixed-dim":"#ffb59e","surface-container-high":"#ebe8df","secondary-fixed":"#dbe9a9","on-background":"#1c1c17","surface-container-lowest":"#ffffff","on-primary-fixed":"#390b00","surface-container-low":"#f6f3ea","secondary-container":"#d8e6a6","surface-container-highest":"#e5e2da","inverse-surface":"#31312b","on-secondary-container":"#5c6834","on-primary-fixed-variant":"#793016","tertiary-fixed":"#e4e2e1","on-tertiary-fixed":"#1b1c1c"},
+      borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},
+      fontFamily:{"headline":["Noto Serif"],"body":["Manrope"],"label":["Manrope"]}
+    }}
+  }
+</script>
+<style>
+.material-symbols-outlined { font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24; vertical-align: middle }
+.grain-overlay { background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuBIv1nX_MhhS1hAFsUXWpsqqwlbjP9oRaK3Dea11W7onbr3IXlam9X8vRL3CpGJzCuzu9DPbnhAB1o3-0tXQ5CXbDba6I1enNpVi3han4xx5wplLodoMH5R83sIaoLz5H-0200cYvkcNzVKZNQ4Oh9tv-OuVQE3msj1NonfluF34Z_Kpgmct6BLW3MIISErWuSO_1dtgJmiYhEAv-94Ts2YqUchximIuaO2isDF6nBIcN4KAnAQQzNflqNQelGZLXyoDSSY9FzpWGhP); opacity: 0.03 }
+</style>
+</head>
+<body class="bg-background font-body text-on-surface antialiased">
+<div class="fixed inset-0 grain-overlay z-[60] pointer-events-none"></div>
+<header class="sticky top-0 w-full z-50 bg-stone-50/80 backdrop-blur-xl shadow-[0_10px_40px_-15px_rgba(131,55,29,0.06)]">
+  <nav class="flex justify-between items-center px-6 md:px-12 py-6 max-w-screen-2xl mx-auto">
+    <a href="index.html" class="text-2xl font-serif italic font-bold text-orange-900">Grano &amp; Terra</a>
+    <ul class="hidden md:flex gap-10 items-center">
+      <li><a class="text-stone-500 hover:text-orange-700 transition-colors font-serif text-lg tracking-tight" href="menu.html">Menu</a></li>
+      <li><a class="text-stone-500 hover:text-orange-700 transition-colors font-serif text-lg tracking-tight" href="story.html">Our Story</a></li>
+      <li><a class="text-orange-900 border-b-2 border-orange-900/30 pb-1 font-serif text-lg tracking-tight" href="#reservations">Reservations</a></li>
+      <li><a class="text-stone-500 hover:text-orange-700 transition-colors font-serif text-lg tracking-tight" href="contact.html">Contact</a></li>
+    </ul>
+    <div class="flex items-center gap-4">
+      <a class="hidden md:flex items-center gap-2 text-stone-500 hover:text-orange-700 transition-colors font-serif text-lg tracking-tight mr-4" href="#">
+        <span class="material-symbols-outlined text-xl">person</span><span>Login / Register</span>
+      </a>
+      <a class="bg-primary text-on-primary px-6 py-2.5 rounded-sm font-label uppercase tracking-widest text-xs font-bold hover:opacity-75 transition-all active:scale-95" href="#reservations">Book a Table</a>
+    </div>
+  </nav>
+</header>
+<main>
+<!-- Hero -->
+<section class="relative min-h-[921px] flex items-center overflow-hidden bg-surface">
+  <div class="absolute inset-0 z-0">
+    <img alt="Artisan pasta" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3Ya1BzmRu3rmNoGeWaplSelpdt_yJqSpoKmQ-CSD7U--ZeV30tftWKp2MY5vho6481p2-oq-Jm0UssvCfmcr3CGGlzy7NKJbxNnwuGL6tIkmhIX3gFzLLxjJdFQ1TQg6Uxxeseem2jOX1sXARgw2VZDgZp46L14xKX6S0tsnQbMIk6Jk97KX5AjAOJ6ruNGnAz2Q4qv7gyrKsC1OweFNJqdUxQ0HVcNNLgbnfl36VwoO3FuT7QTPkqTiWDcydJhwJBlJD0VjCkWKk"/>
+    <div class="absolute inset-0 bg-gradient-to-r from-background/90 via-background/40 to-transparent"></div>
+  </div>
+  <div class="relative z-10 container mx-auto px-6 md:px-12">
+    <div class="max-w-3xl">
+      <span class="inline-block text-secondary font-label tracking-[0.3em] uppercase text-sm mb-6">Reserve Your Table</span>
+      <h1 class="font-headline text-5xl md:text-8xl text-on-surface leading-[1.1] tracking-tight mb-8">Your Place at <br/>Our <span class="italic text-primary">Table</span></h1>
+      <p class="text-on-surface-variant text-lg md:text-xl max-w-lg mb-10 leading-relaxed">Secure a place at our table for an unforgettable evening in the heart of Milan.</p>
+      <a href="#reservations" class="inline-block bg-primary text-on-primary px-8 py-4 rounded-sm font-label uppercase tracking-widest text-sm font-bold shadow-2xl hover:opacity-90 transition-all active:scale-95">Reserve Now</a>
+    </div>
+  </div>
+</section>
+<!-- Reservations Form -->
+<section class="py-24 bg-surface" id="reservations">
+  <div class="container mx-auto px-6 md:px-12">
+    <div class="max-w-4xl mx-auto bg-surface-container-lowest p-8 md:p-16 rounded-sm shadow-xl relative overflow-hidden border border-outline-variant/5">
+      <div class="absolute top-0 right-0 p-8 opacity-10">
+        <span class="material-symbols-outlined text-9xl">calendar_today</span>
+      </div>
+      <div class="text-center mb-12">
+        <h2 class="font-headline text-4xl md:text-5xl mb-4">Reserve Your Table</h2>
+        <p class="text-on-surface-variant font-serif italic text-lg">Secure a place at our table for an unforgettable evening.</p>
+      </div>
+      <form class="grid grid-cols-1 md:grid-cols-2 gap-8" onsubmit="handleSubmit(event)">
+        <div class="flex flex-col gap-2">
+          <label class="font-headline text-sm text-primary uppercase tracking-widest">Date</label>
+          <input class="bg-surface-container-low border-0 border-b border-outline-variant py-3 focus:ring-0 focus:border-primary transition-all" type="date"/>
+        </div>
+        <div class="flex flex-col gap-2">
+          <label class="font-headline text-sm text-primary uppercase tracking-widest">Time</label>
+          <select class="bg-surface-container-low border-0 border-b border-outline-variant py-3 focus:ring-0 focus:border-primary transition-all">
+            <option>18:30</option><option>19:00</option><option>19:30</option>
+            <option>20:00</option><option>20:30</option><option>21:00</option>
+          </select>
+        </div>
+        <div class="flex flex-col gap-2">
+          <label class="font-headline text-sm text-primary uppercase tracking-widest">Guests</label>
+          <select class="bg-surface-container-low border-0 border-b border-outline-variant py-3 focus:ring-0 focus:border-primary transition-all">
+            <option>2 People</option><option>3 People</option><option>4 People</option><option>5+ People</option>
+          </select>
+        </div>
+        <div class="flex flex-col gap-2">
+          <label class="font-headline text-sm text-primary uppercase tracking-widest">Phone</label>
+          <input class="bg-surface-container-low border-0 border-b border-outline-variant py-3 focus:ring-0 focus:border-primary transition-all placeholder:text-outline-variant/50" placeholder="+39 000 000 000" type="tel"/>
+        </div>
+        <div class="md:col-span-2 mt-4">
+          <button class="w-full bg-primary text-on-primary py-5 rounded-sm font-label uppercase tracking-[0.2em] font-bold text-sm hover:bg-primary-container transition-colors shadow-lg" type="submit">Confirm Reservation</button>
+        </div>
+      </form>
+      <div id="success-msg" class="hidden mt-6 text-center text-secondary font-semibold text-lg">✓ Thank you! We'll confirm your reservation shortly.</div>
+    </div>
+  </div>
+</section>
+<!-- Location & Hours -->
+<section class="bg-surface-container-high py-24">
+  <div class="container mx-auto px-6 md:px-12">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+      <div class="md:col-span-5 space-y-12">
+        <div>
+          <h3 class="font-headline text-3xl mb-6">Our Sanctuary</h3>
+          <p class="text-on-surface-variant text-lg leading-relaxed">Via delle Erbe, 14<br/>20121 Milano MI, Italy</p>
+        </div>
+        <div>
+          <h3 class="font-headline text-3xl mb-6">Hours</h3>
+          <div class="space-y-3 text-on-surface-variant">
+            <div class="flex justify-between border-b border-outline-variant/10 pb-2">
+              <span>Tuesday — Friday</span><span>18:30 – 23:00</span>
+            </div>
+            <div class="flex justify-between border-b border-outline-variant/10 pb-2">
+              <span>Saturday — Sunday</span><span>12:30 – 23:30</span>
+            </div>
+            <div class="flex justify-between text-error/60">
+              <span>Monday</span><span>Closed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="md:col-span-7 h-[500px] bg-surface-container rounded-sm overflow-hidden border border-outline-variant/20 shadow-inner group">
+        <img alt="Milan map" class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLh6nUTOaf9DoseykRPR9Gm3cbakDZXjpo15RfKGzxP3Yx3kyEkO22RFg7tyLrIvu6wBMBs0-5PoGib1rQCYY3Y5OwCBXJmJ9yjinPaMijlYQdxuLVX7p5PyXzrSB-_SkBeDtobScmZL7nkD7ZeHsecOL8dqSvyDBxkzKpu40_EsrWHlp7asicX5QwGIxR6qeayiBmOxuIG8FMBAzsIjR_54Ya4Q3JqJ2VUxKg3nrnmDkdqaI4oMnTEHvV7dcEZByQo1BxdgrH-q_M"/>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="bg-stone-100 w-full border-t border-stone-200/20">
+  <div class="flex flex-col md:flex-row justify-between items-center px-6 md:px-12 py-16 gap-8 max-w-screen-2xl mx-auto">
+    <div class="flex flex-col gap-4 text-center md:text-left">
+      <a href="index.html" class="text-xl font-serif font-bold text-stone-800">Grano &amp; Terra</a>
+      <p class="text-stone-500 text-sm tracking-wide">© 2024 Grano &amp; Terra. Artisanal Pasta &amp; Heritage.</p>
+    </div>
+    <div class="flex gap-8">
+      <a class="text-stone-500 hover:text-orange-700 transition-colors text-sm tracking-wide uppercase" href="#">Privacy Policy</a>
+      <a class="text-stone-500 hover:text-orange-700 transition-colors text-sm tracking-wide uppercase" href="#">Terms of Service</a>
+      <a class="text-stone-500 hover:text-orange-700 transition-colors text-sm tracking-wide uppercase" href="#">Careers</a>
+    </div>
+    <div class="flex gap-4">
+      <a class="w-10 h-10 flex items-center justify-center rounded-full border border-outline-variant/30 text-primary hover:bg-primary hover:text-on-primary transition-all" href="#"><span class="material-symbols-outlined text-sm">public</span></a>
+      <a class="w-10 h-10 flex items-center justify-center rounded-full border border-outline-variant/30 text-primary hover:bg-primary hover:text-on-primary transition-all" href="#"><span class="material-symbols-outlined text-sm">camera_alt</span></a>
+    </div>
+  </div>
+</footer>
+<script>
+function handleSubmit(e) {
+  e.preventDefault();
+  document.getElementById('success-msg').classList.remove('hidden');
+  e.target.reset();
+  setTimeout(() => document.getElementById('success-msg').classList.add('hidden'), 5000);
+}
+</script>
+</body>
+</html>
